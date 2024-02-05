@@ -76,7 +76,7 @@ def test(model, device, test_loader):
 def main():
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(DEVICE)
-    data_path = '../SCNData'
+    data_path = './data'
     train_dataloader, valid_dataloader, test_dataloader = get_dataset(data_path)
     model = MultiLayerGCN(num_classes=6).to(DEVICE)
     print('-----model:-----')
@@ -103,12 +103,6 @@ def main():
     model.eval()
     acc,avg_class_acc = test(model, DEVICE, test_dataloader)
     print("Test:acc is: {:.4f}, avg_class_acc is {:.4f}\n".format(acc, avg_class_acc))
-
-
-
-
-
-
 
 
 
