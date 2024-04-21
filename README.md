@@ -2,7 +2,7 @@
 
 > [**System-level time computation and representation in the suprachiasmatic nucleus revealed by large-scale calcium imaging and machine learning**]
 >  <br>
-> Zichen Wang†, Jing Yu†, Muyue Zhai, Zehua Wang, Kaiwen Sheng, Yu Zhu, Tianyu Wang, Mianzhi Liu, Lu Wang, Miao Yan, Jue Zhang, Ying Xu, Xianhua Wang, Lei Ma*, Wei Hu*, Heping Cheng* <br>
+> Zichen Wang, Jing Yu, Muyue Zhai, Zehua Wang, Kaiwen Sheng, Yu Zhu, Tianyu Wang, Mianzhi Liu, Lu Wang, Miao Yan, Jue Zhang, Ying Xu, Xianhua Wang, Lei Ma, Wei Hu, Heping Cheng <br>
 > > <https://www.nature.com/articles/s41422-024-00956-x> <br>
 
 This repository contains the implementation for the paper [System-level time computation and representation in the suprachiasmatic nucleus revealed by large-scale calcium imaging and machine learning]. 
@@ -11,7 +11,7 @@ This repository contains the implementation for the paper [System-level time com
 
 > The suprachiasmatic nucleus (SCN) is the mammalian central circadian pacemaker with heterogeneous neurons acting in concert while each harboring self-sustained molecular clockwork. It comprises a pair of oval structures each containing ~10,000 heterogeneous neurons. The central clock integrates the external light and time cues to generate multichannel signals to command peripheral clocks across diverse tissues, thereby regulating physiological functions and daily behaviors of the animal.
 > >
-> ![The SCN Universe](./The SCN Universe.jpg)
+> ![The SCN Universe](The%20SCN%20Universe.jpg/The SCN Universe.jpg)
 
 ## How to run the code
 ### 1. Dependencies
