@@ -1,14 +1,17 @@
 # System-level time computation and representation in the suprachiasmatic nucleus revealed by large-scale calcium imaging and machine learning
 
 > [**System-level time computation and representation in the suprachiasmatic nucleus revealed by large-scale calcium imaging and machine learning**]
-> **under review** <br>
+>  <br>
 > Zichen Wang†, Jing Yu†, Muyue Zhai, Zehua Wang, Kaiwen Sheng, Yu Zhu, Tianyu Wang, Mianzhi Liu, Lu Wang, Miao Yan, Jue Zhang, Ying Xu, Xianhua Wang, Lei Ma*, Wei Hu*, Heping Cheng* <br>
+> > <https://www.nature.com/articles/s41422-024-00956-x> <br>
 
 This repository contains the implementation for the paper [System-level time computation and representation in the suprachiasmatic nucleus revealed by large-scale calcium imaging and machine learning]. 
 
-## The SupraChiasmatic Nucleus
+## The Suprachiasmatic Nucleus
 
-> The suprachiasmatic nucleus (SCN) is the mammalian central circadian clock with heterogeneous neurons acting in concert while each harboring self-sustained molecular clockwork. It comprises a pair of oval structures each containing ~10,000 heterogeneous neurons. The central clock integrates the external light and time cues to generate multichannel signals to command peripheral clocks across diverse tissues, thereby regulating physiological functions and daily behaviors of the animal.
+> The suprachiasmatic nucleus (SCN) is the mammalian central circadian pacemaker with heterogeneous neurons acting in concert while each harboring self-sustained molecular clockwork. It comprises a pair of oval structures each containing ~10,000 heterogeneous neurons. The central clock integrates the external light and time cues to generate multichannel signals to command peripheral clocks across diverse tissues, thereby regulating physiological functions and daily behaviors of the animal.
+> >
+> ![The SCN Universe](./The SCN Universe.jpg)
 
 ## How to run the code
 ### 1. Dependencies
@@ -19,7 +22,7 @@ conda env create -f torch.yml
 
 ### 2. Datasets
 We have SCN Ca2+ signal data from six different mice, and experimental analyses, including the graph-based state classifier, the time prediction workflow, and the time-series analyzer TraceContrast, rely on these data to be completed. We provided the full data in the following link 
-[SCNdata_link](https://drive.google.com/drive/folders/1ttJELycFNqPwdUPA9DDBtKK264xc9ImS?usp=sharing)
+[SCNdata_link](https://pkueducn-my.sharepoint.com/:f:/g/personal/wangzichen_pkueducn_onmicrosoft_com/ElZ-3W0GFl9Hrs0Kh_i2_70B7F5ReKX9hZxlUl837WON8A?e=9kM5cR)
 
 Download the SCN data and put them in ```./SCNData ``` folder.
 
@@ -112,3 +115,10 @@ python main.py
 ```
 
 This will train the GCN model, perform validation, and finally test the model on the provided dataset. The best model is saved in the `./result/best_scn.pt` file.
+
+## Citation
+If you use our data or code in a research project leading to a publication, please cite the paper.
+
+```
+Wang, Z., Yu, J., Zhai, M. et al. System-level time computation and representation in the suprachiasmatic nucleus revealed by large-scale calcium imaging and machine learning. Cell Res (2024). https://doi.org/10.1038/s41422-024-00956-x
+```
